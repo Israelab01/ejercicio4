@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Reserva de Viaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Formulario de Reserva de Viaje</h1>
+
+    <form>
+        <label for="nombre">Nombre completo*: <span>* significa campo obligatorio</span></label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="paquete">Selecciona el paquete vacacional:*</label>
+        <select id="paquete" name="paquete" required>
+            <option value="goa">Goa</option>
+            <option value="cachemira">Cachemira</option>
+            <option value="rajastan">Rajastán</option>
+        </select>
+        
+        <button type="submit">Completar Reserva</button>
+    </form>
+</body>
+</html>

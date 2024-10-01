@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Internos</title>
+    <style type="text/css">
+        .background {
+            background: lightgrey;
+        }
+        .head {
+            background: transparent;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50px;
+            text-align: center;
+            z-index: 3;
+        }
+        .eyeball {
+            background: transparent;
+            font-size: 8px;
+            font-weight: 700;
+            padding: 5px;
+            border: 2px solid;
+            margin: 12px 0 0 32px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+        .pupil {
+            line-height: 12px;
+            font-size: 36px;
+            color: black;
+        }
+        .beak {
+            padding-left: 30px;
+            font-size: 40px;
+            position: absolute;
+            right: -17px;
+            top: 50%;
+            margin-top: -20px;
+            color: orange;
+        }
+        .body {
+            position: absolute;
+            top: 90px;
+            right: 100px;
+            z-index: 1;
+            background-color: yellow;
+        }
+        .wing {
+            position: absolute;
+            top: 40px;
+            font-size: 40px;
+            left: 38px;
+            color: brown;
+        }
+        .drumsticks {
+            position: absolute;
+            top: 180px;
+            left: 80px;
+            font-weight: 700;
+            color: brown;
+        }
+        .drumstick-right {
+            left: 110px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="canvas background">
+        <div class="air background"></div>
+        <div class="head">
+            <div class="eyeball">
+                <span class="pupil">&middot;</span>
+            </div>
+            <div class="beak">
+                <strong>&gt;</strong>
+            </div>
+        </div>
+        <div class="body">
+            <div class="wing">
+                <strong>&lt;</strong>
+            </div>
+        </div>
+        <div class="drumsticks">
+            <div class="drumstick">|<br />/\</div>
+            <div class="drumstick drumstick-right">|<br />/\</div>
+        </div>
+    </div>
+
+</body>
+</html>
